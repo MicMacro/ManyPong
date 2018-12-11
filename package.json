@@ -1,0 +1,11 @@
+{
+  "name": "multipong",
+  "version": "1.0.0",
+  "description": "Pong, With Multiple Balls!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "The MicMacro Technology Group",
+  "license": "UNLICENSED"
+}
