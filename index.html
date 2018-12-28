@@ -227,7 +227,7 @@ function randnegpostwo(negall){
 	var plusonemat = Math.random();
 	var realfinal = 0;
 	var realtwo = 0;
-	var realmat = (Math.random() * 2) + 1;
+	var realmat = Math.random() * (Math.random()+1);
 
 	if(negposmat > 0.5){
 		negpos = true;
@@ -254,27 +254,14 @@ function randnegpostwo(negall){
 	}
 
 	console.log(realfinal)
-	console.log("ho")
 
-	if(realfinal < 1 && negpos == false){
-		console.log("here")
+	if(realfinal < 1){
 		realfinal = randnegpostwo(negall);
-		return null;
-	}
-	console.log("hot")
-
-	if(realfinal > -1 && negpos == true){
-		console.log("here2")
-		realfinal = randnegpostwo(negall);
-		return null;
 	}
 
-	console.log("ret")
 	return realfinal;
 
 }
-
-
 
 
 var player = new Player1();
